@@ -18,11 +18,7 @@ body{
     margin:0;
     background:#f4f6f9;
 }
-@media(max-width:900px){
-    .branch-container{
-        grid-template-columns:1fr;
-    }
-  }
+
 
 
 .container{
@@ -90,7 +86,15 @@ box-shadow:0 3px 8px rgba(0,0,0,0.1);
 .accordion-button:not(.collapsed){
 background:#eaf2ff;
 color:#0b4ea2;
+
 }
+@media(max-width:900px){
+    .branch-container{
+        grid-template-columns:1fr;
+    }
+  }
+
+
 </style>
 
 </head>
@@ -566,5 +570,4 @@ duration:1000,
 once:true
 });
 </script>
-
 </html>
