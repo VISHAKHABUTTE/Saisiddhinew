@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+  
+}
+
+ body {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: #000;
+  padding: 12px 0;
+}
+
+/* Brand */
+.custom-navbar .navbar-brand {
+  font-size: 1.4rem;
+  color: #ffc107;
+  letter-spacing: 0.5px;
+}
+
+/* Nav links */
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.custom-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+/* Toggler */
+.navbar-toggler {
+  border-color: #ffc107;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.team-card {
+  border: none;
+  text-align: center;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.img-wrapper:hover .img-overlay {
+  opacity: 1;
+}
+.footer-link {
+  color: #bdbdbd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-link i {
+  margin-right: 6px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.social-icons a {
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-right: 12px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+.tb_text_wrap {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .tb_text_wrap img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+.gallery-img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.marathi-text {
+  font-family: 'Mukta', sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.marathi-text i {
+  color: #6c757d;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.section-title {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.section-title{
+color:#0b4ea2;
+}
+
+.scheme-img{
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.custom-accordion .accordion-item{
+border-radius:12px;
+overflow:hidden;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+border:none;
+}
+
+.custom-accordion .accordion-button{
+font-size:18px;
+font-weight:600;
+background:#f8f9fc;
+color:#0b4ea2;
+}
+
+.custom-accordion .accordion-button:not(.collapsed){
+background:#0b4ea2;
+color:white;
+}
+
+.custom-accordion table th{
+background:#0b4ea2;
+color:white;
+}
+
+.custom-accordion table{
+border-radius:8px;
+overflow:hidden;
+}
+.dropdown-menu{
+border-radius:10px;
+border:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.dropdown-item{
+font-weight:500;
+padding:10px 18px;
+}
+
+.dropdown-item:hover{
+background:#0b4ea2;
+color:white;
+}
+.lang-switch{
+display:flex;
+align-items:center;
+}
+
+#langToggle{
+position:relative;
+width:70px;
+height:34px;
+border:none;
+border-radius:30px;
+background:#0d6efd;
+cursor:pointer;
+color:#fff;
+font-weight:600;
+overflow:hidden;
+transition:0.3s;
+}
+
+#langToggle:hover{
+background:#084298;
+}
+
+.switch-circle{
+position:absolute;
+width:28px;
+height:28px;
+background:white;
+border-radius:50%;
+top:3px;
+left:4px;
+transition:0.4s;
+}
+
+#langToggle.active .switch-circle{
+left:38px;
+}
+
+#langText{
+position:absolute;
+width:100%;
+text-align:center;
+font-size:13px;
+top:7px;
+}
+/* Deposit Banner */
+
+.deposit-banner{
+    width:100%;
+    height:350px;
+    background-image:url("image/services cover.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.deposit-banner-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.deposit-banner-overlay h1{
+    font-size:45px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.deposit-banner-overlay p{
+    font-size:18px;
+    margin-top:10px;
+}
+/* Navbar fix */
+
+.custom-navbar{
+    background:#000;
+    position:relative;
+    z-index:1000;
+}
+
+/* Dropdown above banner */
+
+.dropdown-menu{
+    z-index:2000;
+}
+
+/* Carousel below navbar */
+
+.carousel{
+    position:relative;
+    z-index:1;
+}
+.navbar .dropdown-toggle::after{
+display:none;
+}
